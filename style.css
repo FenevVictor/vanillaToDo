@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	max-width: 600px;
+	padding: 30px 40px;
+}
+
+.Add {
+	border: 1px solid grey;
+	border-radius:5px;
+	padding: 5px;
+	display: flex;
+	align-content: center;
+
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	display: flex;
+	align-content: center;
+	padding: 0;
+	position: relative;
+	right: 42px;
+	width: 100%;
+	margin-left: 40px;
+}
+
+
+.TextToAdd {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+
+.first {
+	margin-left: 2px;
+	margin-top: 5px;
+	width: 12%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+.second {
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 88%;
+	padding-left: 15px;
+	color: white;
+	padding-top:15px;
+	padding-bottom: 15px;
+	font-size: 22px;
+}
+.color {
+	margin-right: 10px;
+	display: none;
+}
+.color:checked + label {
+	outline: 2px solid darkgoldenrod;
+}
+
+.BAdd {
+	width: 14%;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	background: lightseagreen;
+	color: white;
+	margin-left: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: default;
+	transition:0.2s;
+	border-radius:5px;
+}
+
+.BAdd:hover {
+	background: #b3b3b3;
+
+}
+
+.check > div {
+	background: gray !important;
+	text-decoration: line-through;
+}
+
+.inp {
+	padding-left: 20px;
+	margin-right: 10px;
+	height: 20px;
+	align-self: center;
+	cursor: pointer;
+}

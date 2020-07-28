@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ToDo List </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div id="headerID" class="header">
+
+    <p style="font-size: 18px">Your todos</p>
+
+</div>
+
+<div id="container" class="container">
+    <ul id="MyUL" class="MyUL">
+    </ul>
+
+</div>
+
+<div id="Add" class="Add">
+    <input type="text" name="TextToAdd" id="TextToAdd" maxlength="20" size="25" class="TextToAdd"
+           style="margin-right: 10px;" placeholder="Add new item">
+
+    <input name="color" type="radio" id="red" class="color" value="red">
+    <label for="red" class="inp" style="background:#FF6347" id="r" onclick="setColor(0)"></label>
+
+    <input name="color" type="radio" class="color" id="green" value="green">
+    <label for="green" id="g" class="inp" style="background:#228B22" onclick="setColor(1)"></label>
+
+	<input name="color" class="color"  type="radio" id="blue" value="blue">
+	<label for="blue" id="b" class="inp" style="background:#4682B4" onclick="setColor(2)"></label>
+
+	<input name="color" class="color" type="radio" id="yellow" value="yellow">
+	<label for="yellow" id="y" class="inp" style="background:#F0E68C" onclick="setColor(3)"></label>
+
+	<input name="color" class="color" type="radio" id="grey" value="grey">
+	<label for="grey" id="gr" class="inp" style="background:#2F4F4F"  onclick="setColor(4)"></label>
+
+	<span onclick="AddElement()" class="BAdd">Add</span>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Task </title>
+	</head>
+	<body>
+		<form name="test">
+			<script type='text/javascript'>
+				let i =1;
+				var idi = "id1";
+				function createInp() {
+					try{
+						event.preventDefault();
+						//alert(idi);
+						var number = document.getElementById(idi).value;
+						if (number === "555"){
+							number = "---";
+						}
+						let container = document.getElementById('create');
+						var input = document.createElement("input");
+						var br = document.createElement("br");
+						input.type = "text";
+						if (i & 1){
+							//input.placeholder=number.toUpperCase();
+							input.value = number.toUpperCase();
+						} else {
+							input.value = number.toLowerCase();
+							//input.placeholder=number.toLowerCase();
+						}
+						i++;
+						container.appendChild(br);
+						idi = "id" + i;
+						input.id = idi;
+						//alert(idi);
+						container.appendChild(input);
+					} 
+					catch (err) {
+						alert(err);
+					}
+					
+
+				}
+			</script>
+			<div id="create">
+				<input type="text" id="id1">
+
+				<input type="submit" href="#" id="filldetails" onclick="createInp()" value="Add!">
+			</div>
+
+		</form>
+	</body>
+</html>
